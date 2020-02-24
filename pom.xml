@@ -48,6 +48,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+            <version>1.18.12</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -86,7 +87,12 @@
                             <groupId>org.mapstruct</groupId>
                             <version>${org.mapstruct.version}</version>
                         </path>
-                    </annotationProcessorPaths> <!-- depending on your project -->
+                        <path>
+                            <artifactId>lombok</artifactId>
+                            <groupId>org.projectlombok</groupId>
+                            <version>1.18.12</version>
+                        </path>
+                </annotationProcessorPaths> <!-- depending on your project -->
                 </configuration>
                 <groupId>org.apache.maven.plugins</groupId> <!-- or newer version -->
                 <version>3.5.1</version>
